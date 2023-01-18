@@ -8,6 +8,31 @@ body {
   background: linear-gradient(black, rgb(130, 5, 184), Black);
 }
 
+/* Estilo menu */
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    background-color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(163, 92, 230);
+  }
+  
+  .menu {
+    padding-top: 25px;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+  }
+  .menu ul li {
+    margin-right: 2%;
+  }
+
 video {
   width: 100%;
   height: 100%;
@@ -162,31 +187,6 @@ h2 {
 
 label {
   color: white;
-}
-
-/* Estilo menu */
-.top {
-  display: flex;
-  justify-content: space-between;
-  font-size: xx-large;
-  background-color: black;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(163, 92, 230);
-}
-
-.menu {
-  padding-top: 25px;
-}
-.menu ul {
-  display: flex;
-  justify-content: end;
-  list-style-type: none;
-}
-.menu ul li {
-  margin-right: 2%;
 }
 
 footer {
