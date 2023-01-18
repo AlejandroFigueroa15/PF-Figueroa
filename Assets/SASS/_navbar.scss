@@ -1,0 +1,30 @@
+@use '_commons' as c;
+
+/* Estilo menu */
+.top{
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    background-color:c.$color-top;
+   
+}
+a{
+    text-decoration: none;
+    color: c.$color-texto-nav;
+}
+//anidacion
+.menu{
+    padding-top: 25px;
+    
+    ul{
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+
+        li{
+            margin-right:2%;
+        }
+
+    }
+}
+

@@ -2,37 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: fantasy;
-  color: blueviolet;
 }
 
 body {
   background: linear-gradient(black, rgb(130, 5, 184), Black);
-}
-
-/* Estilo menu */
-.top {
-  display: flex;
-  justify-content: space-between;
-  font-size: xx-large;
-  background-color: black;
-}
-
-a {
-  text-decoration: none;
-}
-
-.menu {
-  padding-top: 25px;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: end;
-  list-style-type: none;
-}
-
-.menu ul li {
-  margin-right: 2%;
 }
 
 video {
@@ -46,20 +19,18 @@ video {
 }
 
 h2 {
-  color: antiquewhite;
+  color: white;
   font-family: sans-serif;
 }
 
 /* Celulares */
 #celulares {
-  display: flex;
   justify-content: space-around;
   display: grid;
   grid-template-columns: 20%, 20%, 20%;
   grid-template-rows: 20%, 20%;
   grid-template-areas: "iphone huawei motorola" "pixel samsung xiaomi";
 }
-
 #celulares img {
   width: 150px;
   height: 150px;
@@ -67,7 +38,8 @@ h2 {
      object-fit: contain;
 }
 
-.iphone {
+.iphone, .xiaomi, .samsung, .pixel, .motorola, .huawei {
+  text-align: center;
   max-width: 170px;
   margin: 15px;
   padding: 10px;
@@ -77,126 +49,46 @@ h2 {
   background-color: white;
   transition: all 300ms ease;
 }
-
-.iphone:hover {
+.iphone p, .xiaomi p, .samsung p, .pixel p, .motorola p, .huawei p {
+  margin-top: 5px;
+  color: #333030;
+}
+.iphone form, .xiaomi form, .samsung form, .pixel form, .motorola form, .huawei form {
+  margin-top: 7px;
+}
+.iphone:hover, .xiaomi:hover, .samsung:hover, .pixel:hover, .motorola:hover, .huawei:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
-}
-
-.iphone p {
-  color: #333030;
 }
 
 .huawei {
-  max-width: 170px;
-  margin: 15px;
-  padding: 10px;
   grid-area: huawei;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.huawei:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.huawei p {
-  color: #333030;
 }
 
 .motorola {
-  max-width: 170px;
-  margin: 15px;
-  padding: 10px;
   grid-area: motorola;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.motorola:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.motorola p {
-  color: #333030;
 }
 
 .pixel {
-  max-width: 170px;
-  margin: 15px;
-  padding: 10px;
   grid-area: pixel;
-  border-radius: 10px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.pixel:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.pixel p {
-  color: #333030;
 }
 
 .samsung {
-  max-width: 170px;
-  margin: 15px;
-  padding: 10px;
   grid-area: samsung;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.samsung:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.samsung p {
-  color: #333030;
 }
 
 .xiaomi {
-  max-width: 170px;
-  margin: 15px;
-  padding: 10px;
   grid-area: xiaomi;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.xiaomi:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.xiaomi p {
-  color: #333030;
 }
 
 /* Accesorios */
 #accesorios {
-  display: flex;
   justify-content: space-around;
   display: grid;
   grid-template-columns: 20%, 20%, 20%;
   grid-template-rows: 20%, 20%;
   grid-template-areas: "cable funda powerbank" "gamepad vidrio adaptador";
 }
-
 #accesorios img {
   width: 150px;
   height: 150px;
@@ -204,124 +96,47 @@ h2 {
      object-fit: contain;
 }
 
-.cable {
+.cable, .adaptador, .vidrio, .gamepad, .powerbank, .funda {
+  text-align: center;
   max-width: 150px;
   margin: 15px;
   padding: 10px;
   grid-area: cable;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.cable:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.cable p {
-  color: #333030;
-}
-
-.funda {
-  max-width: 150px;
-  margin: 15px;
-  padding: 10px;
-  grid-area: funda;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.funda:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.funda p {
-  color: #333030;
-}
-
-.powerbank {
-  max-width: 150px;
-  margin: 15px;
-  padding: 10px;
-  grid-area: powerbank;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.powerbank:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.powerbank p {
-  color: #333030;
-}
-
-.gamepad {
-  max-width: 150px;
-  margin: 10px;
-  padding: 10px;
-  grid-area: gamepad;
   border-radius: 10px;
   box-shadow: 0 0 0.1em rgb(0, 0, 0);
   background-color: white;
   transition: all 300ms ease;
 }
-
-.gamepad:hover {
+.cable p, .adaptador p, .vidrio p, .gamepad p, .powerbank p, .funda p {
+  margin-top: 5px;
+  color: #333030;
+}
+.cable form, .adaptador form, .vidrio form, .gamepad form, .powerbank form, .funda form {
+  margin-top: 7px;
+}
+.cable:hover, .adaptador:hover, .vidrio:hover, .gamepad:hover, .powerbank:hover, .funda:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
 
-.gamepad p {
-  color: #333030;
+.funda {
+  grid-area: funda;
+}
+
+.powerbank {
+  grid-area: powerbank;
+}
+
+.gamepad {
+  grid-area: gamepad;
 }
 
 .vidrio {
-  max-width: 150px;
-  margin: 10px;
-  padding: 10px;
   grid-area: vidrio;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.vidrio:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.vidrio p {
-  color: #333030;
 }
 
 .adaptador {
-  max-width: 150px;
-  margin: 10px;
-  padding: 10px;
   grid-area: adaptador;
-  border-radius: 6px;
-  box-shadow: 0 0 0.1em rgb(0, 0, 0);
-  background-color: white;
-  transition: all 300ms ease;
-}
-
-.adaptador:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.adaptador p {
-  color: #333030;
 }
 
 /* Nosotros */
@@ -331,9 +146,8 @@ h2 {
   text-align: center;
   font-size: x-large;
 }
-
 .texto p {
-  color: aliceblue;
+  color: white;
   padding: 10px;
   margin: 50px;
 }
@@ -347,10 +161,36 @@ h2 {
 }
 
 label {
-  color: antiquewhite;
+  color: white;
+}
+
+/* Estilo menu */
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-size: xx-large;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(163, 92, 230);
+}
+
+.menu {
+  padding-top: 25px;
+}
+.menu ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+.menu ul li {
+  margin-right: 2%;
 }
 
 footer {
+  color: rgb(163, 92, 230);
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: x-large;

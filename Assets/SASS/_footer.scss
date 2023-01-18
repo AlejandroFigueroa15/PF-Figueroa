@@ -1,0 +1,9 @@
+@use '_commons' as c;
+
+footer{
+    color: c.$color-texto-nav;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    background-color:c.$color-top;
+}
