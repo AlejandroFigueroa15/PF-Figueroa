@@ -1,0 +1,199 @@
+@use '_commons' as c;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+body{
+    background:c.$color-fondo
+}
+
+
+
+video{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+#tittle{
+    padding: 10px;
+    font-size: xx-large;
+}
+
+h2{
+    color:c.$color-titulo;
+    font-family:sans-serif;
+}
+
+/* Celulares */
+
+#celulares{
+    
+    justify-content:space-around;
+    display: grid;
+    grid-template-columns: 20%, 20%, 20%;
+    grid-template-rows: 20%, 20%;
+    grid-template-areas: 
+    "iphone huawei motorola"
+    "pixel samsung xiaomi" ;
+
+
+    img{
+        width:c.$alto-imagen;
+        height:c.$ancho-imagen;
+        object-fit: contain;
+    }
+}
+
+
+.iphone{
+    text-align: center;
+    max-width: 170px;
+    margin: 15px;
+    padding: 10px;
+    grid-area: iphone;
+    border-radius: 10px;
+    box-shadow: 0 0 0.1em rgba(0, 0,0, 0.3);
+    background-color:white;
+    transition: all 300ms ease;
+    p{
+        margin-top:5px;
+        color: #333030
+    }
+    form{
+        margin-top: 7px;
+    }
+
+    &:hover{box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform:translateY(-3%)
+    }
+
+}
+
+.huawei{
+    @extend .iphone;
+    grid-area: huawei;
+}
+
+.motorola{
+    @extend .iphone;
+    grid-area: motorola;
+}
+
+.pixel{
+    @extend .iphone;
+    grid-area: pixel;
+}
+
+.samsung{
+    @extend .iphone;
+    grid-area: samsung;
+}
+
+.xiaomi{
+    @extend .iphone;
+    grid-area: xiaomi; 
+}
+
+/* Accesorios */
+#accesorios{
+
+    justify-content:space-around;
+    display: grid;
+    grid-template-columns: 20%, 20%, 20%;
+    grid-template-rows: 20%, 20%;
+    grid-template-areas: 
+    "cable funda powerbank"
+    "gamepad vidrio adaptador";  
+
+    img{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+}
+
+
+.cable{
+    text-align: center;
+    max-width: 150px;
+    margin: 15px;
+    padding: 10px;
+    grid-area: cable;
+    border-radius: 10px;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0.3);
+    background-color:white;
+    transition: all 300ms ease;
+    p{
+        margin-top:5px;
+        color: #333030
+    }
+    form{
+        margin-top: 7px;
+    }
+
+    &:hover{box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform:translateY(-3%)
+    }
+    
+}
+
+.funda{
+    @extend .cable;
+    grid-area: funda;
+}
+
+.powerbank{
+    @extend .cable;
+    grid-area: powerbank;
+}
+
+.gamepad{
+    @extend .cable;
+    grid-area: gamepad;
+}
+
+.vidrio{
+    @extend .cable;
+    grid-area: vidrio;
+}
+
+.adaptador{
+    @extend .cable;
+    grid-area: adaptador;
+}
+
+/* Nosotros */
+
+.texto{
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: x-large;
+
+    p{
+        color:c.$color-titulo;
+        padding: 10px;
+        margin: 50px;
+    }
+}
+
+
+/* Contacto */
+
+#formulario{
+    margin: 20px;
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+
+label{
+    color:c.$color-titulo
+}
+
+
+
