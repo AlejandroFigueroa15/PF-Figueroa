@@ -1,6 +1,12 @@
 @use '_commons' as c;
 
-/* Estilo menu */
+/* Estilo Menu Mobile*/
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+
 .top{
     display: flex;
     justify-content: space-between;
@@ -12,6 +18,8 @@ a{
     text-decoration: none;
     color: c.$color-texto-nav;
 }
+
+
 //anidacion
 .menu{
     padding-top: 25px;
@@ -19,7 +27,6 @@ a{
     ul{
         display: flex;
         justify-content: end;
-        list-style-type: none;
 
         li{
             margin-right:2%;
@@ -27,4 +34,3 @@ a{
 
     }
 }
-
