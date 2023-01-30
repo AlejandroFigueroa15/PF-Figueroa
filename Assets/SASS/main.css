@@ -193,35 +193,6 @@ label {
   color: white;
 }
 
-/* Estilo Menu Mobile*/
-* {
-  text-decoration: none;
-  list-style: none;
-}
-
-.top {
-  display: flex;
-  justify-content: space-between;
-  font-size: xx-large;
-  background-color: black;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(163, 92, 230);
-}
-
-.menu {
-  padding-top: 25px;
-}
-.menu ul {
-  display: flex;
-  justify-content: end;
-}
-.menu ul li {
-  margin-right: 2%;
-}
-
 footer {
   color: rgb(163, 92, 230);
   text-align: center;
