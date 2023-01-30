@@ -12,7 +12,7 @@ body{
 
 
 video{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     
     
@@ -21,30 +21,53 @@ video{
 #tittle{
     padding: 10px;
     font-size: xx-large;
+    
+    h2{
+        color:c.$color-titulo;
+        font-family:sans-serif;
+    }
 }
 
-h2{
-    color:c.$color-titulo;
-    font-family:sans-serif;
-}
+
 
 /* Celulares */
-
 #celulares{
     
     justify-content:space-around;
     display: grid;
-    grid-template-columns: 20%, 20%, 20%;
-    grid-template-rows: 20%, 20%;
+    grid-template-columns: 30%, 30%;
+    grid-template-rows: 10%, 10%, 10%;
     grid-template-areas: 
-    "iphone huawei motorola"
-    "pixel samsung xiaomi" ;
+    "iphone huawei"
+    "motorola pixel"
+    "samsung xiaomi" ;
 
 
     img{
         width:c.$alto-imagen;
         height:c.$ancho-imagen;
         object-fit: contain;
+    }
+}
+
+@media only screen and (min-width:1280px){
+
+    #celulares{
+    
+        justify-content:space-around;
+        display: grid;
+        grid-template-columns: 20%, 20%, 20%;
+        grid-template-rows: 20%, 20%;
+        grid-template-areas: 
+        "iphone huawei motorola"
+        "pixel samsung xiaomi" ;
+
+
+        img{
+            width:c.$alto-imagen;
+            height:c.$ancho-imagen;
+            object-fit: contain;
+        }
     }
 }
 
@@ -103,11 +126,12 @@ h2{
 
     justify-content:space-around;
     display: grid;
-    grid-template-columns: 20%, 20%, 20%;
-    grid-template-rows: 20%, 20%;
+    grid-template-columns: 30%, 30%;
+    grid-template-rows: 10%, 10%, 10%;
     grid-template-areas: 
-    "cable funda powerbank"
-    "gamepad vidrio adaptador";  
+    "cable funda"
+    "powerbank gamepad" 
+    "vidrio adaptador";  
 
     img{
         width: 150px;
@@ -116,6 +140,24 @@ h2{
     }
 }
 
+@media only screen and (min-width:1280px){
+    #accesorios{
+
+        justify-content:space-around;
+        display: grid;
+        grid-template-columns: 20%, 20%, 20%;
+        grid-template-rows: 20%, 20%;
+        grid-template-areas: 
+        "cable funda powerbank"
+        "gamepad vidrio adaptador";  
+
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+    }
+}
 
 .cable{
     text-align: center;
